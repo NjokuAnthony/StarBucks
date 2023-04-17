@@ -1,6 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,500;1,600;1,800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
 }
+
+:root{
+    --main-color: #008148;
+    --second-color: #1e3932;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54/ 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* ---------------home------------- */
+
+.home{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    background: #ebdbc8;
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+.home-img{
+    flex: 1 1 17rem;
+}
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px, 0);
+    }
+    50%{
+        transform: translate(-0px, -11px);
+    }
+    100%{
+        transform: translate(-11px, 0);
+    }
+}
+.home-text span{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+.home-text h1{
+    font-size: 3.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+.home-text h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--second-color);
+    margin: 0.5rem 0 1.4rem;
+    text-transform: uppercase;
+}
+.btn{
+    padding: 7px 16px;
+    font-weight: 500;
+    border: 2px solid var(--second-color);
+    color: var(--second-color);
+    border-radius: 40px;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--second-color);
+}
+
+
+
