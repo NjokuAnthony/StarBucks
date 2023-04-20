@@ -59,6 +59,10 @@ header{
     font-weight: 600;
     text-transform: uppercase;
 }
+.home-text span {
+    font-size: 0.9rem;
+}
+/* https://pepsi-kappa.vercel.app/ */
 
 .navbar a:hover{
     color: var(--main-color);
@@ -108,13 +112,13 @@ header{
     color: var(--second-color);
 }
 .home-text h1{
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: bolder;
     color: var(--main-color);
 }
 .home-text h2{
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--second-color);
     margin: 0.5rem 0 1.4rem;
     text-transform: uppercase;
@@ -277,4 +281,35 @@ header{
 }
 .contact p{
     text-align: center;
+}
+
+@media (max-width: 576px){
+    header{
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+@media (max-width: 768px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
 }
